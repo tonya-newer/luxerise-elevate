@@ -33,8 +33,8 @@ const Navigation = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/98 backdrop-blur-md shadow-lg py-4'
-          : 'bg-gradient-to-b from-black/40 via-black/20 to-transparent py-6'
+          ? 'bg-white/98 backdrop-blur-md shadow-lg py-3'
+          : 'bg-transparent py-5'
       }`}
     >
       <div className="container-luxury flex items-center justify-between">
@@ -49,7 +49,7 @@ const Navigation = () => {
           <img 
             src={logo} 
             alt="LuxeRise Solutions" 
-            className="h-16 md:h-20 lg:h-24 w-auto transition-all duration-300 drop-shadow-lg brightness-110 contrast-110" 
+            className="h-20 md:h-24 lg:h-28 w-auto transition-all duration-300" 
           />
         </a>
 
