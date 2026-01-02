@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from '@/assets/logo.png';
 
 const navLinks = [
   { href: '#home', label: 'Home' },
@@ -46,11 +45,13 @@ const Navigation = () => {
           }}
           className="flex items-center"
         >
-          <img 
-            src={logo} 
-            alt="LuxeRise Solutions" 
-            className="h-20 md:h-24 lg:h-28 w-auto transition-all duration-300" 
-          />
+          <span className={`text-2xl md:text-3xl font-bold tracking-tight transition-colors duration-300 ${
+            isScrolled ? 'text-charcoal' : 'text-white'
+          }`}>
+            <span className="font-heading">Luxe</span>
+            <span className="font-heading text-gold">Rise</span>
+            <span className="font-heading font-normal ml-2">Solutions</span>
+          </span>
         </a>
 
         {/* Desktop Navigation */}
