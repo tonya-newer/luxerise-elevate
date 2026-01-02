@@ -27,7 +27,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white leading-tight mb-8"
+            className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white leading-[1.1] mb-8"
           >
             Marketing Solutions{' '}
             <span className="text-gold">Designed to Elevate</span> Your Brand
