@@ -1,22 +1,12 @@
 import { Facebook, Linkedin, Instagram } from 'lucide-react';
-import logo from '@/assets/logo.png';
 
 const Footer = () => {
   return (
     <footer className="bg-navy py-14">
       <div className="container-luxury">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          {/* Logo */}
-          <div className="flex items-center">
-            <img 
-              src={logo} 
-              alt="LuxeRise Solutions" 
-              className="h-14 md:h-16 w-auto brightness-0 invert" 
-            />
-          </div>
-
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
           {/* Copyright */}
-          <p className="text-white/80 text-base text-center font-medium">
+          <p className="text-white/90 text-base text-center font-medium">
             © LuxeRise Solutions LLC | All Rights Reserved
           </p>
 

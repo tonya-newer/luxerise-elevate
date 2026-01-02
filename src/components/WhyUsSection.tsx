@@ -3,7 +3,7 @@ import { Check, Sparkles } from 'lucide-react';
 import useScrollAnimation from '@/hooks/useScrollAnimation';
 
 const benefits = [
-  'Personalized marketing strategies designed specifically for small businesses',
+  'Personalized marketing strategies designed specifically for your business',
   'Elevated, luxury brand positioning that builds credibility and trust',
   'Strategic insight paired with creative execution',
   'Clear communication, thoughtful planning, and intentional growth support',

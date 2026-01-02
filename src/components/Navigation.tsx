@@ -49,7 +49,7 @@ const Navigation = () => {
           <img 
             src={logo} 
             alt="LuxeRise Solutions" 
-            className="h-14 md:h-16 lg:h-18 w-auto transition-all duration-300" 
+            className="h-20 md:h-24 lg:h-28 w-auto transition-all duration-300" 
           />
         </a>
 
