@@ -29,7 +29,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white leading-tight mb-8"
           >
-            Luxury Marketing Solutions{' '}
+            Marketing Solutions{' '}
             <span className="text-gold">Designed to Elevate</span> Your Brand
           </motion.h1>
           

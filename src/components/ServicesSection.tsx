@@ -91,7 +91,7 @@ const ServicesSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-3xl mx-auto text-charcoal-light text-lg md:text-xl leading-relaxed"
           >
-            We offer tailored marketing solutions designed to support businesses at every stage of growth. Each service is approached with strategy, creativity, and a focus on long-term brand value while maintaining a refined, luxury presence.
+            We offer tailored marketing solutions designed to support businesses at every stage of growth. Each service is approached with strategy, creativity, and a focus on long-term brand value while maintaining a refined and professional presence.
           </motion.p>
         </div>
 
