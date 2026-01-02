@@ -6,71 +6,75 @@
 
 @layer base {
   :root {
-    /* Luxury cream/neutral palette */
-    --background: 40 33% 98%;
-    --foreground: 220 15% 20%;
+    /* Crisp white background */
+    --background: 0 0% 100%;
+    --foreground: 220 25% 15%;
 
-    --card: 40 20% 97%;
-    --card-foreground: 220 15% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 15%;
 
-    --popover: 40 33% 98%;
-    --popover-foreground: 220 15% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 15%;
 
-    /* Sage green from logo */
-    --primary: 160 18% 45%;
-    --primary-foreground: 40 33% 98%;
+    /* Deep Emerald primary */
+    --primary: 160 84% 25%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Terracotta accent from logo */
-    --secondary: 12 40% 52%;
-    --secondary-foreground: 40 33% 98%;
+    /* Rich Teal secondary */
+    --secondary: 175 65% 35%;
+    --secondary-foreground: 0 0% 100%;
 
-    /* Warm muted tones */
-    --muted: 40 15% 92%;
-    --muted-foreground: 220 10% 45%;
+    /* Muted for subtle elements */
+    --muted: 210 15% 96%;
+    --muted-foreground: 220 15% 40%;
 
-    --accent: 160 15% 90%;
-    --accent-foreground: 160 18% 35%;
+    /* Gold accent */
+    --accent: 42 75% 50%;
+    --accent-foreground: 220 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 40 15% 88%;
-    --input: 40 15% 88%;
-    --ring: 160 18% 45%;
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 160 84% 25%;
 
     --radius: 0.5rem;
 
-    /* Custom luxury tokens */
-    --cream: 40 33% 96%;
-    --cream-dark: 40 20% 92%;
-    --charcoal: 220 15% 25%;
-    --charcoal-light: 220 10% 40%;
-    --sage: 160 18% 45%;
-    --sage-light: 160 15% 92%;
-    --sage-dark: 160 20% 35%;
-    --terracotta: 12 40% 52%;
-    --terracotta-light: 12 35% 92%;
+    /* Custom luxury tokens - vibrant palette */
+    --emerald: 160 84% 25%;
+    --emerald-light: 160 60% 94%;
+    --emerald-dark: 160 85% 18%;
+    --teal: 175 65% 35%;
+    --teal-light: 175 50% 92%;
+    --sapphire: 215 75% 35%;
+    --sapphire-light: 215 60% 94%;
+    --charcoal: 220 25% 15%;
+    --charcoal-light: 220 15% 35%;
+    --navy: 220 50% 20%;
+    --gold: 42 75% 50%;
+    --gold-light: 42 70% 92%;
     --warm-white: 40 50% 99%;
   }
 
   .dark {
-    --background: 220 15% 10%;
-    --foreground: 40 33% 98%;
-    --card: 220 15% 12%;
-    --card-foreground: 40 33% 98%;
-    --popover: 220 15% 12%;
-    --popover-foreground: 40 33% 98%;
-    --primary: 160 18% 50%;
-    --primary-foreground: 220 15% 10%;
-    --secondary: 12 40% 55%;
-    --secondary-foreground: 220 15% 10%;
-    --muted: 220 15% 18%;
-    --muted-foreground: 40 20% 70%;
-    --accent: 160 15% 20%;
-    --accent-foreground: 160 18% 85%;
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 160 18% 50%;
+    --background: 220 25% 8%;
+    --foreground: 0 0% 98%;
+    --card: 220 25% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 25% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 160 70% 40%;
+    --primary-foreground: 220 25% 8%;
+    --secondary: 175 55% 45%;
+    --secondary-foreground: 220 25% 8%;
+    --muted: 220 20% 18%;
+    --muted-foreground: 210 20% 70%;
+    --accent: 42 70% 55%;
+    --accent-foreground: 220 25% 8%;
+    --border: 220 20% 22%;
+    --input: 220 20% 22%;
+    --ring: 160 70% 40%;
   }
 }
 
@@ -108,53 +112,76 @@
   .gradient-overlay {
     background: linear-gradient(
       to bottom,
-      hsl(var(--charcoal) / 0.6) 0%,
-      hsl(var(--charcoal) / 0.4) 50%,
-      hsl(var(--charcoal) / 0.7) 100%
+      hsl(220 25% 15% / 0.75) 0%,
+      hsl(220 25% 15% / 0.55) 50%,
+      hsl(220 25% 15% / 0.8) 100%
     );
   }
 
   .service-card {
-    @apply bg-card border border-border/50 rounded-lg p-8 transition-all duration-300;
-    @apply hover:shadow-lg hover:border-primary/30 hover:-translate-y-1;
+    @apply bg-card border border-border rounded-lg p-8 transition-all duration-300;
+    @apply hover:shadow-xl hover:border-primary/40 hover:-translate-y-2;
+    @apply hover:bg-gradient-to-br hover:from-emerald-light hover:to-white;
   }
 
   .btn-luxury {
-    @apply inline-flex items-center justify-center px-8 py-4 font-medium text-sm tracking-wide uppercase;
-    @apply bg-primary text-primary-foreground rounded transition-all duration-300;
-    @apply hover:bg-sage-dark hover:shadow-lg;
+    @apply inline-flex items-center justify-center px-8 py-4 font-semibold text-sm tracking-wide uppercase;
+    @apply bg-primary text-primary-foreground rounded-lg transition-all duration-300;
+    @apply hover:bg-emerald-dark hover:shadow-xl hover:scale-105;
   }
 
   .btn-luxury-outline {
-    @apply inline-flex items-center justify-center px-8 py-4 font-medium text-sm tracking-wide uppercase;
-    @apply border-2 border-primary text-primary rounded transition-all duration-300;
-    @apply hover:bg-primary hover:text-primary-foreground;
+    @apply inline-flex items-center justify-center px-8 py-4 font-semibold text-sm tracking-wide uppercase;
+    @apply border-2 border-primary text-primary rounded-lg transition-all duration-300;
+    @apply hover:bg-primary hover:text-primary-foreground hover:scale-105;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center px-10 py-4 font-semibold text-sm tracking-wide uppercase;
+    @apply bg-accent text-charcoal rounded-lg transition-all duration-300;
+    @apply hover:bg-gold hover:shadow-xl hover:scale-105;
   }
 }
 
 @layer utilities {
-  .bg-cream {
-    background-color: hsl(var(--cream));
+  .bg-emerald {
+    background-color: hsl(var(--emerald));
   }
   
-  .bg-cream-dark {
-    background-color: hsl(var(--cream-dark));
+  .bg-emerald-light {
+    background-color: hsl(var(--emerald-light));
   }
   
-  .bg-sage {
-    background-color: hsl(var(--sage));
+  .bg-emerald-dark {
+    background-color: hsl(var(--emerald-dark));
   }
   
-  .bg-sage-light {
-    background-color: hsl(var(--sage-light));
+  .bg-teal {
+    background-color: hsl(var(--teal));
   }
   
-  .bg-terracotta {
-    background-color: hsl(var(--terracotta));
+  .bg-teal-light {
+    background-color: hsl(var(--teal-light));
   }
   
-  .bg-terracotta-light {
-    background-color: hsl(var(--terracotta-light));
+  .bg-sapphire {
+    background-color: hsl(var(--sapphire));
+  }
+  
+  .bg-sapphire-light {
+    background-color: hsl(var(--sapphire-light));
+  }
+  
+  .bg-navy {
+    background-color: hsl(var(--navy));
+  }
+  
+  .bg-gold {
+    background-color: hsl(var(--gold));
+  }
+  
+  .bg-gold-light {
+    background-color: hsl(var(--gold-light));
   }
   
   .bg-warm-white {
@@ -169,22 +196,27 @@
     color: hsl(var(--charcoal-light));
   }
   
-  .text-sage {
-    color: hsl(var(--sage));
+  .text-emerald {
+    color: hsl(var(--emerald));
   }
   
-  .text-sage-dark {
-    color: hsl(var(--sage-dark));
+  .text-emerald-dark {
+    color: hsl(var(--emerald-dark));
   }
   
-  .text-terracotta {
-    color: hsl(var(--terracotta));
+  .text-teal {
+    color: hsl(var(--teal));
+  }
+  
+  .text-gold {
+    color: hsl(var(--gold));
   }
 
-  .hover\:bg-sage-dark:hover {
-    background-color: hsl(var(--sage-dark));
+  .hover\:bg-emerald-dark:hover {
+    background-color: hsl(var(--emerald-dark));
   }
 
+  /* Scroll animations */
   .animate-fade-up {
     animation: fadeUp 0.8s ease-out forwards;
   }
@@ -193,10 +225,18 @@
     animation: fadeIn 0.6s ease-out forwards;
   }
 
+  .animate-slide-up {
+    animation: slideUp 0.7s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+
   @keyframes fadeUp {
     from {
       opacity: 0;
-      transform: translateY(30px);
+      transform: translateY(40px);
     }
     to {
       opacity: 1;
@@ -212,4 +252,37 @@
       opacity: 1;
     }
   }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Staggered animation delays */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+  .stagger-6 { animation-delay: 0.6s; }
+  .stagger-7 { animation-delay: 0.7s; }
+  .stagger-8 { animation-delay: 0.8s; }
+  .stagger-9 { animation-delay: 0.9s; }
 }

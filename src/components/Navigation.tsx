@@ -33,7 +33,7 @@ const Navigation = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-background/95 backdrop-blur-md shadow-sm py-3'
+          ? 'bg-white/98 backdrop-blur-md shadow-lg py-3'
           : 'bg-transparent py-5'
       }`}
     >
@@ -46,7 +46,11 @@ const Navigation = () => {
           }}
           className="flex items-center"
         >
-          <img src={logo} alt="LuxeRise Solutions" className="h-10 md:h-12 w-auto" />
+          <img 
+            src={logo} 
+            alt="LuxeRise Solutions" 
+            className="h-14 md:h-16 lg:h-18 w-auto transition-all duration-300" 
+          />
         </a>
 
         {/* Desktop Navigation */}
@@ -59,10 +63,10 @@ const Navigation = () => {
                   e.preventDefault();
                   scrollToSection(link.href);
                 }}
-                className={`text-sm font-medium tracking-wide uppercase transition-colors duration-200 ${
+                className={`text-sm font-semibold tracking-wide uppercase transition-colors duration-200 ${
                   isScrolled
                     ? 'text-charcoal hover:text-primary'
-                    : 'text-white/90 hover:text-white'
+                    : 'text-white hover:text-gold'
                 }`}
               >
                 {link.label}
@@ -79,13 +83,13 @@ const Navigation = () => {
           }`}
           aria-label="Toggle menu"
         >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-md shadow-lg animate-fade-in">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-xl animate-fade-in">
           <ul className="container-luxury py-6 flex flex-col gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -95,7 +99,7 @@ const Navigation = () => {
                     e.preventDefault();
                     scrollToSection(link.href);
                   }}
-                  className="block py-2 text-charcoal font-medium tracking-wide uppercase hover:text-primary transition-colors"
+                  className="block py-3 text-charcoal font-semibold tracking-wide uppercase hover:text-primary transition-colors"
                 >
                   {link.label}
                 </a>
