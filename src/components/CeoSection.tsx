@@ -47,7 +47,7 @@ const CeoSection = () => {
                 LuxeRise Solutions is led by <strong className="text-charcoal font-semibold">Lashawn Blackston</strong>, a visionary leader with a deep passion for creativity, strategy, and helping others bring their ideas to life. Lashawn is known for her ability to see the potential in brands before they fully see it themselves, guiding business owners toward clarity, confidence, and elevated presentation.
               </p>
               <p>
-                With a natural eye for design and a strategic mindset, Lashawn approaches marketing as both an art and a solution. Her work is rooted in collaboration, authenticity, and a genuine desire to help small businesses rise beyond limitations and step into their full potential.
+                With a natural eye for design and a strategic mindset, Lashawn approaches marketing as both an art and a solution. Her work is rooted in collaboration, authenticity, and a genuine desire to help businesses rise beyond limitations and step into their full potential.
               </p>
             </div>
             

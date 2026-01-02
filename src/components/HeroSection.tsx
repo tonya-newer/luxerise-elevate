@@ -39,7 +39,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-xl md:text-2xl text-white/90 leading-relaxed mb-12 max-w-3xl"
           >
-            LuxeRise Solutions is a full-service marketing and consulting firm dedicated to helping small businesses build strong, recognizable brands through strategic marketing, creative execution, and intentional growth planning.
+            LuxeRise Solutions is a marketing and consulting firm dedicated to helping businesses build strong, recognizable brands through strategic marketing, creative execution, and intentional growth planning.
           </motion.p>
           
           <motion.div

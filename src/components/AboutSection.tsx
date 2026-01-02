@@ -33,7 +33,7 @@ const AboutSection = () => {
             className="space-y-8 text-charcoal-light text-lg md:text-xl leading-relaxed"
           >
             <p>
-              At LuxeRise Solutions, we believe every small business deserves marketing that feels intentional, elevated, and aligned with its vision. We partner with entrepreneurs and business owners to create customized marketing strategies that reflect who they are, what they stand for, and where they want to go.
+              At LuxeRise Solutions, we believe every business deserves marketing that feels intentional, elevated, and aligned with its vision. We partner with entrepreneurs and business owners to create customized marketing strategies that reflect who they are, what they stand for, and where they want to go.
             </p>
             <p>
               Our approach blends creativity, strategy, and thoughtful execution to ensure your brand not only looks polished but communicates clearly and connects meaningfully with your audience. Whether you are building your brand from the ground up or refining your existing presence, LuxeRise Solutions provides guidance and support designed to help your business rise with confidence.
