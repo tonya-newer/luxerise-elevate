@@ -96,6 +96,17 @@
   }
 }
 
+@layer base {
+  #lovable-badge,
+  [id^="lovable-"],
+  [class^="lovable-"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}
+
 @layer components {
   .section-padding {
     @apply py-20 md:py-28 lg:py-32;
